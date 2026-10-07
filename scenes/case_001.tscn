@@ -1,0 +1,282 @@
+[gd_scene format=3 uid="uid://7wfcsljwk43x"]
+
+[ext_resource type="Script" uid="uid://bycuhfuuyookp" path="res://scripts/case_001.gd" id="1_f3ry6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3pf04"]
+bg_color = Color(0.08235294, 0.09411765, 0.11372549, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.16078432, 0.18039216, 0.21176471, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f3ry6"]
+bg_color = Color(0.11372549, 0.13333334, 0.16078432, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.34901962, 0.38039216, 0.42745098, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cfckt"]
+bg_color = Color(0.08235294, 0.09411765, 0.11372549, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.16078432, 0.18039216, 0.21176471, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xpv4b"]
+bg_color = Color(0.11372549, 0.13333334, 0.16078432, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.34901962, 0.38039216, 0.42745098, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f65rk"]
+bg_color = Color(0.08235294, 0.09411765, 0.11372549, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.16078432, 0.18039216, 0.21176471, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ixyu6"]
+bg_color = Color(0.11372549, 0.13333334, 0.16078432, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.34901962, 0.38039216, 0.42745098, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="Case001" type="Control" unique_id=1209977800]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_f3ry6")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1068805875]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.043137256, 0.050980393, 0.0627451, 1)
+
+[node name="Content" type="MarginContainer" parent="." unique_id=2037675137]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 70
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 70
+theme_override_constants/margin_bottom = 50
+
+[node name="MainContainer" type="VBoxContainer" parent="Content" unique_id=764859358]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Header" type="HBoxContainer" parent="Content/MainContainer" unique_id=1148703249]
+layout_mode = 2
+
+[node name="CaseNumber" type="Label" parent="Content/MainContainer/Header" unique_id=1010025086]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.4509804, 0.4745098, 0.5137255, 1)
+text = "ДЕЛО №001"
+
+[node name="CaseStatus" type="Label" parent="Content/MainContainer/Header" unique_id=1255211732]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.4509804, 0.4745098, 0.5137255, 1)
+theme_override_font_sizes/font_size = 16
+text = "АКТИВНО"
+
+[node name="CaseTitle" type="Label" parent="Content/MainContainer" unique_id=975737069]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9098039, 0.91764706, 0.92941177, 1)
+theme_override_font_sizes/font_size = 36
+text = "ПОСЛЕДНЕЕ СООБЩЕНИЕ"
+
+[node name="TitleSeparator" type="HSeparator" parent="Content/MainContainer" unique_id=2001045187]
+layout_mode = 2
+
+[node name="CaseDescription" type="Label" parent="Content/MainContainer" unique_id=1256951697]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.65882355, 0.6784314, 0.70980394, 1)
+theme_override_font_sizes/font_size = 17
+text = "Илья Воронов исчез в 23:48.
+
+Последнее сообщение:
+«Не звони мне. Я сам всё объясню утром.»
+
+Телефон отключился через 11 минут."
+autowrap_mode = 3
+
+[node name="EvidenceContainer" type="HBoxContainer" parent="Content/MainContainer" unique_id=837697239]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="MessagesButton" type="Button" parent="Content/MainContainer/EvidenceContainer" unique_id=57600995]
+custom_minimum_size = Vector2(220, 110)
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_3pf04")
+theme_override_styles/hover = SubResource("StyleBoxFlat_f3ry6")
+text = "СООБЩЕНИЯ"
+
+[node name="PhotoButton" type="Button" parent="Content/MainContainer/EvidenceContainer" unique_id=1996805228]
+custom_minimum_size = Vector2(220, 110)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_cfckt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_xpv4b")
+text = "ФОТО"
+
+[node name="CallButton" type="Button" parent="Content/MainContainer/EvidenceContainer" unique_id=456800838]
+custom_minimum_size = Vector2(220, 110)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_f65rk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ixyu6")
+text = "ЗВОНОК"
+
+[node name="EvidenceCounter" type="Label" parent="Content/MainContainer" unique_id=1856449070]
+layout_mode = 2
+text = "УЛИКИ: 0 / 3"
+
+[node name="MessagesPanel" type="PanelContainer" parent="." unique_id=207583073]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MessagesContent" type="VBoxContainer" parent="MessagesPanel" unique_id=720010432]
+layout_mode = 2
+
+[node name="MessagesTitle" type="Label" parent="MessagesPanel/MessagesContent" unique_id=1985724320]
+layout_mode = 2
+text = "СООБЩЕНИЯ"
+
+[node name="Message1" type="Label" parent="MessagesPanel/MessagesContent" unique_id=1900131576]
+layout_mode = 2
+text = "22:14  Илья → Алина
+
+Ты дома?"
+
+[node name="Message2" type="Label" parent="MessagesPanel/MessagesContent" unique_id=193191177]
+layout_mode = 2
+text = "22:31  Алина → Илья
+
+Да. А что?"
+
+[node name="Message3" type="Label" parent="MessagesPanel/MessagesContent" unique_id=641787038]
+layout_mode = 2
+text = "23:36  Неизвестный номер → Илья
+
+ВХОДЯЩИЙ ЗВОНОК — 17 секунд"
+
+[node name="Message4" type="Label" parent="MessagesPanel/MessagesContent" unique_id=555641777]
+layout_mode = 2
+text = "23:41  Илья → Алина
+
+Не звони мне. Я сам всё объясню утром."
+
+[node name="BackButton" type="Button" parent="MessagesPanel/MessagesContent" unique_id=2009589494]
+layout_mode = 2
+text = "← НАЗАД К ДЕЛУ"
+
+[node name="PhotoPanel" type="PanelContainer" parent="." unique_id=556588698]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PhotoContent" type="VBoxContainer" parent="PhotoPanel" unique_id=86121427]
+layout_mode = 2
+
+[node name="PhotoTitle" type="Label" parent="PhotoPanel/PhotoContent" unique_id=1476387679]
+layout_mode = 2
+text = "ФОТО №001"
+
+[node name="PhotoDescription" type="Label" parent="PhotoPanel/PhotoContent" unique_id=23056628]
+layout_mode = 2
+text = "Фотография сделана в квартире Ильи
+в день его исчезновения.
+
+На кухонном столе лежат два комплекта ключей.
+
+Илья жил один."
+
+[node name="BackButton" type="Button" parent="PhotoPanel/PhotoContent" unique_id=1940108157]
+layout_mode = 2
+text = "← НАЗАД К ДЕЛУ"
+
+[node name="CallPanel" type="PanelContainer" parent="." unique_id=343430169]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CallContent" type="VBoxContainer" parent="CallPanel" unique_id=574374663]
+layout_mode = 2
+
+[node name="CallTitle" type="Label" parent="CallPanel/CallContent" unique_id=62603318]
+layout_mode = 2
+text = "ЗВОНОК №001"
+
+[node name="CallInfo" type="Label" parent="CallPanel/CallContent" unique_id=736762063]
+layout_mode = 2
+text = "23:36
+Неизвестный номер → Илья
+
+Длительность: 17 секунд"
+
+[node name="ListenButton" type="Button" parent="CallPanel/CallContent" unique_id=1397908053]
+layout_mode = 2
+text = "▶ ПРОСЛУШАТЬ"
+
+[node name="CallStatus" type="Label" parent="CallPanel/CallContent" unique_id=1022088974]
+layout_mode = 2
+text = "Статус: Не прослушано"
+
+[node name="BackButton" type="Button" parent="CallPanel/CallContent" unique_id=393154187]
+layout_mode = 2
+text = "← НАЗАД К ДЕЛУ"
+
+[connection signal="pressed" from="Content/MainContainer/EvidenceContainer/MessagesButton" to="." method="_on_messages_button_pressed"]
+[connection signal="pressed" from="Content/MainContainer/EvidenceContainer/PhotoButton" to="." method="_on_photo_button_pressed"]
+[connection signal="pressed" from="Content/MainContainer/EvidenceContainer/CallButton" to="." method="_on_call_button_pressed"]
+[connection signal="pressed" from="MessagesPanel/MessagesContent/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="PhotoPanel/PhotoContent/BackButton" to="." method="_on_photo_back_button_pressed"]
+[connection signal="pressed" from="CallPanel/CallContent/ListenButton" to="." method="_on_listen_button_pressed"]
+[connection signal="pressed" from="CallPanel/CallContent/BackButton" to="." method="_on_call_back_button_pressed"]
