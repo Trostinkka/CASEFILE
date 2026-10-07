@@ -174,6 +174,10 @@ text = "ЗВОНОК"
 layout_mode = 2
 text = "УЛИКИ: 0 / 3"
 
+[node name="TheoryButton" type="Button" parent="Content/MainContainer" unique_id=2115898349]
+layout_mode = 2
+text = "СФОРМИРОВАТЬ ТЕОРИЮ"
+
 [node name="MessagesPanel" type="PanelContainer" parent="." unique_id=207583073]
 visible = false
 layout_mode = 0
@@ -273,10 +277,99 @@ text = "Статус: Не прослушано"
 layout_mode = 2
 text = "← НАЗАД К ДЕЛУ"
 
+[node name="TheoryPanel" type="PanelContainer" parent="." unique_id=497561385]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TheoryContent" type="VBoxContainer" parent="TheoryPanel" unique_id=1972856519]
+layout_mode = 2
+
+[node name="TheoryTitle" type="Label" parent="TheoryPanel/TheoryContent" unique_id=1223381762]
+layout_mode = 2
+text = "СФОРМИРОВАТЬ ТЕОРИЮ"
+
+[node name="TheoryDescription" type="Label" parent="TheoryPanel/TheoryContent" unique_id=290876879]
+layout_mode = 2
+text = "Ты изучил все доступные улики.
+
+Что, по твоему мнению, произошло с Ильёй?"
+
+[node name="TheoryButton1" type="Button" parent="TheoryPanel/TheoryContent" unique_id=205762113]
+layout_mode = 2
+text = "Илья ушёл сам и инсценировал исчезновение"
+
+[node name="TheoryButton2" type="Button" parent="TheoryPanel/TheoryContent" unique_id=1653281929]
+layout_mode = 2
+text = "Илью кто-то встретил после выхода из дома"
+
+[node name="TheoryButton3" type="Button" parent="TheoryPanel/TheoryContent" unique_id=2082604216]
+layout_mode = 2
+text = "Илья планировал исчезновение заранее"
+
+[node name="BackButton" type="Button" parent="TheoryPanel/TheoryContent" unique_id=677942181]
+layout_mode = 2
+text = "← НАЗАД К ДЕЛУ"
+
+[node name="ResultPanel" type="PanelContainer" parent="." unique_id=1169427289]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ResultContent" type="VBoxContainer" parent="ResultPanel" unique_id=1021682744]
+layout_mode = 2
+
+[node name="ResultTitle" type="Label" parent="ResultPanel/ResultContent" unique_id=1558360375]
+layout_mode = 2
+text = "РАССЛЕДОВАНИЕ ЗАВЕРШЕНО"
+
+[node name="ResultDescription" type="Label" parent="ResultPanel/ResultContent" unique_id=513569836]
+layout_mode = 2
+text = "Ты выбрал свою версию произошедшего."
+
+[node name="FinishCaseButton" type="Button" parent="ResultPanel/ResultContent" unique_id=688703720]
+layout_mode = 2
+text = "ЗАВЕРШИТЬ ДЕЛО"
+
+[node name="BackToCaseButton" type="Button" parent="ResultPanel/ResultContent" unique_id=434117672]
+layout_mode = 2
+text = "ВЕРНУТЬСЯ К ДЕЛУ"
+
+[node name="EndPanel" type="PanelContainer" parent="." unique_id=1533389738]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="EndContent" type="VBoxContainer" parent="EndPanel" unique_id=1132932231]
+layout_mode = 2
+
+[node name="EndTitle" type="Label" parent="EndPanel/EndContent" unique_id=2077840818]
+layout_mode = 2
+text = "РАССЛЕДОВАНИЕ ЗАВЕРШЕНО"
+
+[node name="EndDescription" type="Label" parent="EndPanel/EndContent" unique_id=708496036]
+layout_mode = 2
+text = "Итог расследования"
+
+[node name="EndButton" type="Button" parent="EndPanel/EndContent" unique_id=1073337379]
+layout_mode = 2
+text = "ВЕРНУТЬСЯ К ДЕЛАМ"
+
 [connection signal="pressed" from="Content/MainContainer/EvidenceContainer/MessagesButton" to="." method="_on_messages_button_pressed"]
 [connection signal="pressed" from="Content/MainContainer/EvidenceContainer/PhotoButton" to="." method="_on_photo_button_pressed"]
 [connection signal="pressed" from="Content/MainContainer/EvidenceContainer/CallButton" to="." method="_on_call_button_pressed"]
+[connection signal="pressed" from="Content/MainContainer/TheoryButton" to="." method="_on_theory_button_pressed"]
 [connection signal="pressed" from="MessagesPanel/MessagesContent/BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="pressed" from="PhotoPanel/PhotoContent/BackButton" to="." method="_on_photo_back_button_pressed"]
 [connection signal="pressed" from="CallPanel/CallContent/ListenButton" to="." method="_on_listen_button_pressed"]
 [connection signal="pressed" from="CallPanel/CallContent/BackButton" to="." method="_on_call_back_button_pressed"]
+[connection signal="pressed" from="TheoryPanel/TheoryContent/TheoryButton1" to="." method="_on_theory_button_1_pressed"]
+[connection signal="pressed" from="TheoryPanel/TheoryContent/TheoryButton2" to="." method="_on_theory_button_2_pressed"]
+[connection signal="pressed" from="TheoryPanel/TheoryContent/TheoryButton3" to="." method="_on_theory_button_3_pressed"]
+[connection signal="pressed" from="TheoryPanel/TheoryContent/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="ResultPanel/ResultContent/FinishCaseButton" to="." method="_on_finish_case_button_pressed"]
+[connection signal="pressed" from="ResultPanel/ResultContent/BackToCaseButton" to="." method="_on_back_to_case_button_pressed"]
+[connection signal="pressed" from="EndPanel/EndContent/EndButton" to="." method="_on_end_button_pressed"]

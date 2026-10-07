@@ -6,4 +6,4 @@ func _ready() -> void:
 	pass # Replace with function body.
 
 func _on_start_button_pressed() -> void:
-	print("Расследование началось")
+	get_tree().change_scene_to_file("res://scenes/case_001.tscn")
